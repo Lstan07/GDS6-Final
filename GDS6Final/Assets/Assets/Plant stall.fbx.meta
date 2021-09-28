@@ -7,48 +7,53 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: lambert8
+    second: {fileID: 2100000, guid: 188b7f750ca06df42a88b9c259a6389f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: plant_atlas_14
-    second: {fileID: 2100000, guid: 8c175120e20661943a40702b18f8efcf, type: 2}
+    second: {fileID: 2100000, guid: 657ba8b55fbb4ee47b0c9fd511a1de72, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: plant_atlas_17
-    second: {fileID: 2100000, guid: 8c175120e20661943a40702b18f8efcf, type: 2}
+    second: {fileID: 2100000, guid: 657ba8b55fbb4ee47b0c9fd511a1de72, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: plant_atlas_18
-    second: {fileID: 2100000, guid: 8c175120e20661943a40702b18f8efcf, type: 2}
+    second: {fileID: 2100000, guid: 657ba8b55fbb4ee47b0c9fd511a1de72, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: plant_atlas_19
-    second: {fileID: 2100000, guid: 8c175120e20661943a40702b18f8efcf, type: 2}
+    second: {fileID: 2100000, guid: 657ba8b55fbb4ee47b0c9fd511a1de72, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: plant_atlas_20
-    second: {fileID: 2100000, guid: 8c175120e20661943a40702b18f8efcf, type: 2}
+    second: {fileID: 2100000, guid: 657ba8b55fbb4ee47b0c9fd511a1de72, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: plant_atlas_21
-    second: {fileID: 2100000, guid: 8c175120e20661943a40702b18f8efcf, type: 2}
+    second: {fileID: 2100000, guid: 657ba8b55fbb4ee47b0c9fd511a1de72, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: plant_atlas_22
-    second: {fileID: 2100000, guid: 8c175120e20661943a40702b18f8efcf, type: 2}
+    second: {fileID: 2100000, guid: 657ba8b55fbb4ee47b0c9fd511a1de72, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: plant_atlas_23
-    second: {fileID: 2100000, guid: 8c175120e20661943a40702b18f8efcf, type: 2}
+    second: {fileID: 2100000, guid: 657ba8b55fbb4ee47b0c9fd511a1de72, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: plant_atlas_24
-    second: {fileID: 2100000, guid: 8c175120e20661943a40702b18f8efcf, type: 2}
+    second: {fileID: 2100000, guid: 657ba8b55fbb4ee47b0c9fd511a1de72, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
