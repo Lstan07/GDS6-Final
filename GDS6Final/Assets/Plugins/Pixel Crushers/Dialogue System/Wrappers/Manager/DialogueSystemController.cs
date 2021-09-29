@@ -13,6 +13,11 @@ namespace PixelCrushers.DialogueSystem.Wrappers
     [AddComponentMenu("Pixel Crushers/Dialogue System/Misc/Dialogue System Controller")]
     public class DialogueSystemController : PixelCrushers.DialogueSystem.DialogueSystemController
     {
+        void Update()
+        {
+            DialogueManager.DisplaySettings.subtitleSettings.subtitleCharsPerSecond = 25;
+        }
     }
 
+    
 }
