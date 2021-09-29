@@ -14,7 +14,7 @@ public class CosmoRotate : MonoBehaviour
     public GameObject Cielle;
     private Rigidbody rb;
     public static bool isTalking = false;
-
+    
     // Start is called before the first frame update
     void Start()
     {
