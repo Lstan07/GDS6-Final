@@ -3917,7 +3917,6 @@ GameObject:
   - component: {fileID: 350706906}
   - component: {fileID: 350706905}
   - component: {fileID: 350706904}
-  - component: {fileID: 350706910}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -4014,35 +4013,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &350706910
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 350706903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b871c74662c23945bf35b97caee462a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  incrementOn: 1
-  variable: ItemsPickedUp
-  increment: 1
-  min: 0
-  max: 3
-  alertMessage: Item Picked Up
-  alertDuration: 1
-  condition:
-    luaConditions: []
-    questConditions: []
-    acceptedTags: []
-    acceptedGameObjects: []
-    luaWizardIndex: -1
-    lastEvaluationValue: 0
-  onIncrement:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &351404787 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 402669be1704bcf4b8828a0529388ec5, type: 3}
@@ -43134,66 +43104,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a066201d38c99b444b4b40842a419d83, type: 3}
   m_PrefabInstance: {fileID: 786190772}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &938679503
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 938679505}
-  - component: {fileID: 938679504}
-  m_Layer: 0
-  m_Name: Dialogue System Scene Events
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &938679504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938679503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca55201633b97d3408f439eb84ecb249, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueEntrySceneEvents:
-  - guid: 5f585631-b305-4452-9a32-c0ca0bcec3a5
-    onExecute:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1029706434}
-          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_MethodName: SetActive
-          m_Mode: 6
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!4 &938679505
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938679503}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 26
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &943685894
 GameObject:
   m_ObjectHideFlags: 0
@@ -48776,7 +48686,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029706434}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 210.14, y: 3.52, z: 265.54}
+  m_LocalPosition: {x: 213.22, y: 3.52, z: 274.81}
   m_LocalScale: {x: 1.5083, y: 1.5083, z: 1.5083}
   m_Children: []
   m_Father: {fileID: 0}
@@ -67319,7 +67229,6 @@ GameObject:
   - component: {fileID: 1385042297}
   - component: {fileID: 1385042296}
   - component: {fileID: 1385042295}
-  - component: {fileID: 1385042301}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Untagged
@@ -67417,35 +67326,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1385042301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1385042294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b871c74662c23945bf35b97caee462a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  incrementOn: 1
-  variable: ItemsPickedUp
-  increment: 1
-  min: 0
-  max: 3
-  alertMessage: Item Picked Up
-  alertDuration: 1
-  condition:
-    luaConditions: []
-    questConditions: []
-    acceptedTags: []
-    acceptedGameObjects: []
-    luaWizardIndex: -1
-    lastEvaluationValue: 0
-  onIncrement:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!4 &1387137248 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 402669be1704bcf4b8828a0529388ec5, type: 3}
@@ -81332,8 +81212,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.7376466, y: 6.4487906, z: 0.9651871}
-  m_Center: {x: 0.009628777, y: 0.0000013256023, z: 0.27878252}
+  m_Size: {x: 4.621759, y: 6.4487906, z: 1.8479673}
+  m_Center: {x: 0.0000002384187, y: 0.0000013113022, z: 0.00000008940701}
 --- !u!114 &1764810820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81341,7 +81221,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1764810816}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 60f5108f6cc081347bad06874eb88a82, type: 3}
   m_Name: 
@@ -81417,19 +81297,19 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: PickUpQuest
+  conversation: New Conversation 2
   conversationConversant: {fileID: 1036536781}
   conversationActor: {fileID: 4448069718315284}
   startConversationEntryID: -1
   exclusive: 0
   replace: 0
-  skipIfNoValidEntries: 0
+  skipIfNoValidEntries: 1
   stopConversationOnTriggerExit: 0
   stopConversationIfTooFar: 0
   maxConversationDistance: 5
   monitorConversationDistanceFrequency: 1
   showCursorDuringConversation: 0
-  pauseGameDuringConversation: 1
+  pauseGameDuringConversation: 0
   setActiveActions: []
   setEnabledActions: []
   setAnimatorStateActions: []
@@ -81440,20 +81320,6 @@ MonoBehaviour:
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
   selectedDatabase: {fileID: 11400000, guid: 1338f32ea1892b74d9a79357cb4984a7, type: 2}
---- !u!64 &1764810823
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1764810816}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8635204234057105521, guid: 169130fb2b124ce4cac92a66aaeb186a, type: 3}
 --- !u!1001 &1765024388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82589,7 +82455,6 @@ GameObject:
   - component: {fileID: 1850684208}
   - component: {fileID: 1850684207}
   - component: {fileID: 1850684206}
-  - component: {fileID: 1850684211}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -82687,35 +82552,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1850684211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1850684205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b871c74662c23945bf35b97caee462a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  incrementOn: 1
-  variable: ItemsPickedUp
-  increment: 1
-  min: 0
-  max: 3
-  alertMessage: Item Picked Up
-  alertDuration: 1
-  condition:
-    luaConditions: []
-    questConditions: []
-    acceptedTags: []
-    acceptedGameObjects: []
-    luaWizardIndex: -1
-    lastEvaluationValue: 0
-  onIncrement:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1001 &1851323137
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -100505,7 +100341,7 @@ MonoBehaviour:
     height: 64
   useKey: 101
   useButton: Fire2
-  defaultUseMessage: press E to Interact
+  defaultUseMessage: press E to interact
   broadcastToChildren: 1
   actorTransform: {fileID: 0}
   tooFarMessage: 
