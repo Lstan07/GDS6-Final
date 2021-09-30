@@ -401,7 +401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 110, y: -301}
+  m_AnchoredPosition: {x: 139, y: -320.21}
   m_SizeDelta: {x: 176.8746, y: 51.696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1061677292
@@ -772,7 +772,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -158.00009, y: -269}
+  m_AnchoredPosition: {x: -160, y: -302.21}
   m_SizeDelta: {x: 188.928, y: 49.2852}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1759949356
@@ -1081,7 +1081,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 50.699}
+  m_AnchoredPosition: {x: 0, y: 142}
   m_SizeDelta: {x: 1131.3428, y: 101.3971}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2014341954
@@ -1109,7 +1109,11 @@ MonoBehaviour:
 
     For
     this playtest, we are testing our dialogue and fetch quest code, along with our
-    3D space. We hope you enjoy the environment and a preview of some NPC''s'
+    3D space. We hope you enjoy the environment and a preview of some NPC''s
+
+
+    Please
+    fill out the survey after the playtest! Thanks.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}

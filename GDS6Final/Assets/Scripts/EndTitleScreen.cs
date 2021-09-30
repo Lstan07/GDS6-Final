@@ -16,6 +16,7 @@ public class EndTitleScreen : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+        print("quit game");
     }
 
 }
