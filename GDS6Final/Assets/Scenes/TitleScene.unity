@@ -555,8 +555,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Controls\n\nMouse to look around\nLMB to collect \nE to Interact with
-    NPCs"
+  m_text: 'Controls
+
+
+    Mouse to look around'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -1108,12 +1110,12 @@ MonoBehaviour:
 
 
     For
-    this playtest, we are testing our dialogue and fetch quest code, along with our
-    3D space. We hope you enjoy the environment and a preview of some NPC''s
+    this playtest, we are testing our 3D space and how it feels to walk around in.
+    We hope you enjoy the environment and a preview of some NPC''s
 
 
-    Please
-    fill out the survey after the playtest! Thanks.'
+    Please fill
+    out the survey after the playtest! Thanks.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
