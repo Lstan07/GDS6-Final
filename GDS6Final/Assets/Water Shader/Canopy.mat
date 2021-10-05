@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Canopy
+  m_Shader: {fileID: 4800000, guid: 8506b707466d5334d8d2a49daa6d8e41, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ReflectionTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SideNoiseTex:
+        m_Texture: {fileID: 2800000, guid: 4dfe1cfbba5a02742bbc9b407649a51c, type: 3}
+        m_Scale: {x: 0, y: 0}
+        m_Offset: {x: 0, y: 0}
+    - _TopNoiseTex:
+        m_Texture: {fileID: 2800000, guid: 4dfe1cfbba5a02742bbc9b407649a51c, type: 3}
+        m_Scale: {x: 0, y: 0}
+        m_Offset: {x: 200, y: 0}
+    m_Floats:
+    - _Amount: 0
+    - _Brightness: 1.145
+    - _BumpScale: 1
+    - _Cutoff: 0.5
+    - _DepthOffset: -2.3
+    - _DetailNormalMapScale: 1
+    - _Distort: 0.46
+    - _DstBlend: 0
+    - _EdgeWidth: 0.32
+    - _Foam: 11.5
+    - _FresnelBias: 1.22
+    - _FresnelPower: -2.44
+    - _FresnelScale: 1.07
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Height: 0
+    - _HorSpeed: 0.39
+    - _Metallic: 0.454
+    - _Mode: 0
+    - _NoiseScale: 0.532
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Reflectivity: 0.306
+    - _RimPower: 13.7
+    - _Smoothness: 0
+    - _SmoothnessTextureChannel: 0
+    - _Softness: 0.131
+    - _SpecularHighlights: 1
+    - _SpeedV: 0
+    - _SrcBlend: 1
+    - _Stretch: 2.48
+    - _TopScale: 0.46
+    - _TopSpread: -0.84
+    - _UVSec: 0
+    - _VERTEX: 0
+    - _VertSpeed: 5.3
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FoamColor: {r: 0.6955767, g: 0.71351105, b: 0.7264151, a: 0.9647059}
+    - _RimColor: {r: 0, g: 0.03773582, b: 0.01886791, a: 1}
+    - _TColor: {r: 0.1541919, g: 0.28212878, b: 0.31132078, a: 1}
+    - _WaterColor: {r: 0.071733706, g: 0.32303306, b: 0.49056602, a: 1}
+  m_BuildTextureStacks: []
