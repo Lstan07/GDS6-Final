@@ -338,7 +338,13 @@ public class FirstPersonAIO : MonoBehaviour {
 
         #region Look Settings - Update
 
-            if(enableCameraMovement && !controllerPauseState){
+        if (InkDialogueManager.GetInstance().dialogueIsPlaying)
+        {
+
+            return;
+        }
+
+        if (enableCameraMovement && !controllerPauseState){
             float mouseYInput = 0;
             float mouseXInput = 0;
             float camFOV = playerCamera.fieldOfView;
@@ -456,6 +462,9 @@ public class FirstPersonAIO : MonoBehaviour {
         inputXY = new Vector2(horizontalInput, verticalInput);
         if(inputXY.magnitude > 1) { inputXY.Normalize(); }
 
+
+
+
             #region Jump
             yVelocity = fps_Rigidbody.velocity.y;
             
@@ -490,9 +499,15 @@ public class FirstPersonAIO : MonoBehaviour {
             }
         }
 
-            #endregion
+        #endregion
 
-        if(playerCanMove && !controllerPauseState){
+        if (InkDialogueManager.GetInstance().dialogueIsPlaying)
+        {
+
+            return;
+        }
+
+        if (playerCanMove && !controllerPauseState){
           fps_Rigidbody.velocity = MoveDirection+(Vector3.up * yVelocity);
 
         } else{fps_Rigidbody.velocity = Vector3.zero;}

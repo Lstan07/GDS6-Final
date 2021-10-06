@@ -11,11 +11,12 @@ public class SelectionManager : MonoBehaviour
 
     //private Transform _selection;
 
-    public string interactButton;
+ 
     public LayerMask interactLayer;
     public Image interactIcon;
     public bool isInteracting;
     public float interactDistance = 3f;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -30,30 +31,34 @@ public class SelectionManager : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        Interaction();
+    }
+
+    public void Interaction()
+    {
         var ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2f, Screen.height / 2f, 0f));
         RaycastHit hit;
 
-        
+
 
         if (Physics.Raycast(ray, out hit, interactDistance, interactLayer))
         {
             
-            if(isInteracting == false)
-            {
-                if (interactIcon != null)
-                {
-                    interactIcon.enabled = true;
-                }
+            if (hit.collider.CompareTag("NPC"))
+            {  
                 
-
-                if (Input.GetButtonDown(interactButton))
+                if (isInteracting == false)
                 {
-                    if (hit.collider.CompareTag("NPC"))
+                    if (interactIcon != null)
                     {
-                        hit.collider.GetComponent<DialogueNPC>().ShowDialogue();
+                    interactIcon.enabled = true;
                     }
+
                 }
+
             }
+
+         
         }
         else
         {
