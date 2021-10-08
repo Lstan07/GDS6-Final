@@ -63,7 +63,7 @@ public class InkDialogueManager : MonoBehaviour
             return;
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(0))
         {
 
             ContinueStory();
@@ -107,6 +107,12 @@ public class InkDialogueManager : MonoBehaviour
             StopAllCoroutines();
             StartCoroutine(TypeSentence(currentSentence));
         }
+
+        if (currentStory.currentChoices.Count < choices.Length)
+        {
+            Debug.Log("Don't Exit");
+        }
+
         else
         {
 
