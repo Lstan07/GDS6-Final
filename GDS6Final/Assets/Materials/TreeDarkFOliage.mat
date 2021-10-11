@@ -7,9 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WaterFX
-  m_Shader: {fileID: 4800000, guid: 8506b707466d5334d8d2a49daa6d8e41, type: 3}
-  m_ShaderKeywords: 
+  m_Name: TreeDarkFOliage
+  m_Shader: {fileID: 4800000, guid: 0e0019510d6142644b412d07db9dee4e, type: 3}
+  m_ShaderKeywords: _BLENDMAINNORMAL_ON _SOURCE_SPECULARALPHA _USEBASECOLORALPHA_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20,6 +20,10 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CutoutMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -40,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: fa4c424603cc8fc4c892c915ad36e4d8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -55,62 +59,66 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _ReflectionTex:
-        m_Texture: {fileID: 2800000, guid: 4b71d85f8d0d9074188c541b76176fa4, type: 3}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _SideNoiseTex:
-        m_Texture: {fileID: 2800000, guid: 9f1d2b1af17905b41bf422f2bd788770, type: 3}
+    - _TransparentMask:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _TopNoiseTex:
-        m_Texture: {fileID: 2800000, guid: 2b7e5d6262e7f56429872fba10e51b33, type: 3}
+    - _texcoord:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Amount: 0.02
-    - _Brightness: 0.74
+    - _AoIntensity: 1
+    - _BlendMainNormal: 1
+    - _Brightness: 1
     - _BumpScale: 1
+    - _ContrastDetailMap: 0
+    - _ContrastTransparentMap: 0
+    - _Cull: 0
     - _Cutoff: 0.5
-    - _DepthOffset: -5.3
+    - _DetailBrightness: 1
     - _DetailNormalMapScale: 1
-    - _Distort: 0.394
+    - _DetailSaturation: 0
     - _DstBlend: 0
-    - _EdgeWidth: 0.09
-    - _Foam: 1
-    - _FresnelBias: 1.01
-    - _FresnelPower: -2.98
-    - _FresnelScale: 3.8
+    - _EmissionIntensity: 1
+    - _EnableDetailMask: 0
     - _GlossMapScale: 1
-    - _Glossiness: 0.5
+    - _Glossiness: 0
     - _GlossyReflections: 1
-    - _Height: 0.005
-    - _HorSpeed: 0.42
+    - _IntensityCutoutMap: 0.614
+    - _IntensityMask: 1
+    - _IntensityTransparentMap: 0
+    - _InvertABaseColor: 0
+    - _InvertCutout: 0
+    - _InvertMask: 0
+    - _InvertTransparent: 0
     - _Metallic: 0
     - _Mode: 0
-    - _NoiseScale: 0.19
     - _OcclusionStrength: 1
     - _Parallax: 0.02
-    - _Reflectivity: 0
-    - _RimPower: 1
-    - _Smoothness: 0
+    - _Saturation: 0
     - _SmoothnessTextureChannel: 0
-    - _Softness: 0.208
+    - _Source: 0
+    - _SourceMask: 0
     - _SpecularHighlights: 1
-    - _SpeedV: 0.1
+    - _SpecularIntensity: 0.2
+    - _SpreadDetailMap: 0
+    - _SpreadTransparentMap: 0
     - _SrcBlend: 1
-    - _Stretch: 2.9
-    - _TopScale: 0.172
-    - _TopSpread: 0.85
     - _UVSec: 0
-    - _VERTEX: 0
-    - _VertSpeed: 6.8
+    - _UseBaseColorAlpha: 1
+    - _VisualizeMask: 0
+    - _ZTest: 4
     - _ZWrite: 1
+    - __dirty: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.6320754, g: 0.6320754, b: 0.6320754, a: 1}
+    - _DetailColor: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FoamColor: {r: 1, g: 1, b: 1, a: 1}
-    - _RimColor: {r: 0.09620862, g: 0.26896957, b: 0.4339623, a: 0.8509804}
-    - _TColor: {r: 0.04338732, g: 0.22352785, b: 0.3679245, a: 0.59607846}
-    - _WaterColor: {r: 0.16456035, g: 0.5687856, b: 0.8113208, a: 0.6156863}
+    - _GlobalXYTilingXYZWOffsetXY: {r: 1, g: 1, b: 0, a: 0}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
