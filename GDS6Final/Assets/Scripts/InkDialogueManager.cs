@@ -63,7 +63,7 @@ public class InkDialogueManager : MonoBehaviour
             return;
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(1))
         {
 
             ContinueStory();
@@ -105,19 +105,23 @@ public class InkDialogueManager : MonoBehaviour
 
             DisplayChoices();
             StopAllCoroutines();
-            StartCoroutine(TypeSentence(currentSentence));
+            StartCoroutine(TypeSentence(currentSentence)); 
+            
+           
         }
-
-        if (currentStory.currentChoices.Count < choices.Length)
-        {
-            Debug.Log("Don't Exit");
-        }
-
         else
         {
 
             ExitDialogueMode();
         }
+
+
+        /* if (currentStory.currentChoices.Count < choices.Length)
+         {
+             Debug.Log("Don't Exit");
+
+
+         }*/
     }
 
     private void DisplayChoices()
