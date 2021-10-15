@@ -9,7 +9,8 @@ public class MusicFading : MonoBehaviour {
 
      public AudioSource Music;
 
-public float fadeFactor = 0.01f;
+    public float fadeInFactor = 0.01f;
+    public float fadeOutFactor = 0.03f;
 
     public bool fadeIn = false;
     public bool fadeOut = false;
@@ -26,7 +27,7 @@ void Start()
         {
             if (Music.volume <= 0.1)
             {
-                Music.volume += fadeFactor * Time.deltaTime;
+                Music.volume += fadeInFactor * Time.deltaTime;
                 print("fadeIn");
             }
         }
@@ -35,7 +36,7 @@ void Start()
         {
             if (Music.volume >= 0)
             {
-                Music.volume -= fadeFactor * Time.deltaTime;
+                Music.volume -= fadeOutFactor * Time.deltaTime;
             }
         }
         

@@ -6,7 +6,8 @@ public class MusicFadeBiome : MonoBehaviour
 {
     public AudioSource Music;
 
-    public float fadeFactor = 0.01f;
+    public float fadeInFactor = 0.02f;
+    public float FadeOutFactor = 0.03f;
 
     public bool fadeIn = false;
     public bool fadeOut = false;
@@ -23,7 +24,7 @@ public class MusicFadeBiome : MonoBehaviour
         {
             if (Music.volume <= 0.1)
             {
-                Music.volume += fadeFactor * Time.deltaTime;
+                Music.volume += fadeInFactor * Time.deltaTime;
                 print("fadeIn");
             }
         }
@@ -32,7 +33,7 @@ public class MusicFadeBiome : MonoBehaviour
         {
             if (Music.volume >= 0)
             {
-                Music.volume -= fadeFactor * Time.deltaTime;
+                Music.volume -= FadeOutFactor * Time.deltaTime;
             }
         }
 
