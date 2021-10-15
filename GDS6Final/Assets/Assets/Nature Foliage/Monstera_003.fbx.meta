@@ -8,7 +8,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: plant_atlas_1
-    second: {fileID: 2100000, guid: 4d9b0d7106303e940a16e498b0322231, type: 2}
+    second: {fileID: 2100000, guid: 657ba8b55fbb4ee47b0c9fd511a1de72, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: d964ebab128dd9848b136c60afe1e694, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: terrain material
     second: {fileID: 2100000, guid: 09dd0b5d3f67d4c48a51de3239b7135e, type: 2}
   materials:
