@@ -63,7 +63,7 @@ public class InkDialogueManager : MonoBehaviour
             return;
         }
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
 
             ContinueStory();
