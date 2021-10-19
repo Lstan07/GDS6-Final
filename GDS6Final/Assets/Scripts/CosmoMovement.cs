@@ -21,7 +21,7 @@ public class CosmoMovement : MonoBehaviour
         TargetDistance = Shot.distance; //relating cielles in the scene to the distance cosmo needs to target 
                                         // if (TargetDistance >= AllowedDistance) //if cielle is further away than where cosmo can be
                                         //{
-        FollowSpeed = 0.012f; //this is cosmos speed
+        FollowSpeed = 1; //this is cosmos speed
                             //if we wanted a run animation, it would be here with: CosmoNPC.GetComaponent<Animation>().Play("NAMEOFANI");
         transform.position = Vector3.MoveTowards(transform.position, CiellePlayer.transform.position, FollowSpeed); //zoom towards cielle's position at the speed                                                                                                             //  }
        //else

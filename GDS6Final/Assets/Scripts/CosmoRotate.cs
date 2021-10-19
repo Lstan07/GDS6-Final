@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class CosmoRotate : MonoBehaviour
 {
-    
-    
     float rotationAngle;
     bool still = true;
     public GameObject Cosmo;
@@ -36,7 +34,7 @@ public class CosmoRotate : MonoBehaviour
             {
                 still = true;
 
-                print("asswipe");
+                //print("asswipe");
             }
 
             if (isTalking == false)
@@ -62,13 +60,13 @@ public class CosmoRotate : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        isTalking = true;
-    }
+    //private void OnTriggerEnter(Collider other)
+    //{
+      //  isTalking = true;
+    //}
 
-    private void OnTriggerExit(Collider other)
-    {
-        isTalking = false;
-    }
+    //private void OnTriggerExit(Collider other)
+    //{
+      //  isTalking = false;
+    //}
 }
