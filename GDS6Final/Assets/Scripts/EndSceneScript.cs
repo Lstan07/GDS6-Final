@@ -9,7 +9,7 @@ public class EndSceneScript : MonoBehaviour
   
     private void OnMouseDown()
     {
-        Application.Quit();
+        Debug.Log("hello????");
     }
     
   

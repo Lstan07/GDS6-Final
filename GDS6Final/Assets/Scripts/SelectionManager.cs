@@ -16,7 +16,8 @@ public class SelectionManager : MonoBehaviour
     public Image interactIcon;
     public bool isInteracting;
     public float interactDistance = 3f;
-    
+    public GameObject fadeImage;
+    public float timeLeft = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,8 @@ public class SelectionManager : MonoBehaviour
         {
             interactIcon.enabled = false;
         }
-         
+
+     
     }
 
     // Update is called once per frame
@@ -51,11 +53,40 @@ public class SelectionManager : MonoBehaviour
                 {
                     if (interactIcon != null)
                     {
+
                     interactIcon.enabled = true;
+
                     }
 
                 }
 
+
+
+            }
+
+            if (hit.collider.CompareTag("EndBall"))
+            {
+
+                if (isInteracting == false)
+                {
+                    if (interactIcon != null)
+                    {
+
+                        interactIcon.enabled = true;
+
+                    }
+
+                }
+
+                if (Input.GetKey(KeyCode.E))
+                {
+
+                    fadeImage.SetActive(true);
+
+                   
+
+                }
+                
             }
 
          
