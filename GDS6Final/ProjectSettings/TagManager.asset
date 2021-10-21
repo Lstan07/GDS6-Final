@@ -7,6 +7,9 @@ TagManager:
   - NPC
   - QuestNPC
   - EndBall
+  - MarketTrigger
+  - AwafeTrigger
+  - LandTrigger
   layers:
   - Default
   - TransparentFX

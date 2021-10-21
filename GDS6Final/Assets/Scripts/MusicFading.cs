@@ -25,10 +25,10 @@ void Start()
     {
         if (fadeIn)
         {
-            if (Music.volume <= 0.1)
+            if (Music.volume <= 0.15)
             {
                 Music.volume += fadeInFactor * Time.deltaTime;
-                print("fadeIn");
+                
             }
         }
 
@@ -62,7 +62,7 @@ void Start()
             
                 fadeOut = true;
                 fadeIn = false;
-                print("why");
+                
             
 
         }

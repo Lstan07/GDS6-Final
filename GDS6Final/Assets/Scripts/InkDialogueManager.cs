@@ -27,6 +27,9 @@ public class InkDialogueManager : MonoBehaviour
 
     private static InkDialogueManager instance;
 
+    public AudioSource MarketMusic;
+    public float songfade;
+
     private void Awake()
     {
         if (instance != null)
@@ -67,6 +70,16 @@ public class InkDialogueManager : MonoBehaviour
         {
 
             ContinueStory();
+        }
+
+        if (dialogueIsPlaying)
+        {
+            if (MarketMusic.volume>=0.035)
+            {
+                MarketMusic.volume -= songfade * Time.deltaTime;
+                print("talking");
+            }
+            
         }
     }
 
