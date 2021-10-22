@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Caravan
     second: {fileID: 2100000, guid: d164e15e10b643545aaa206694ec55eb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lg_environment_material
+    second: {fileID: 2100000, guid: a2a0f336ed10a9e49b3ebc77c8c84082, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
