@@ -125,7 +125,7 @@ Material:
     - _Source: 0
     - _SourceMask: 0
     - _SpecularHighlights: 1
-    - _SpecularIntensity: 0.14
+    - _SpecularIntensity: 0
     - _SpreadDetailMap: 0
     - _SpreadTransparentMap: 0
     - _SrcBlend: 1

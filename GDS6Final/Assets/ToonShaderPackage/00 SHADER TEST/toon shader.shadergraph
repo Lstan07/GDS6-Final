@@ -14,9 +14,6 @@
         },
         {
             "m_Id": "7b2e082f0d3d4c2b8a1c9ca474007c0c"
-        },
-        {
-            "m_Id": "89c14acd66534f7da8fed6d660546bac"
         }
     ],
     "m_Keywords": [],
@@ -77,9 +74,6 @@
         },
         {
             "m_Id": "fbe1663d45804bb385ddb5fce00af981"
-        },
-        {
-            "m_Id": "0b014beebea5480bb626877c4e744f87"
         }
     ],
     "m_GroupDatas": [],
@@ -228,8 +222,8 @@
     ],
     "m_VertexContext": {
         "m_Position": {
-            "x": 0.0,
-            "y": 0.0
+            "x": 107.99998474121094,
+            "y": -95.99996948242188
         },
         "m_Blocks": [
             {
@@ -245,8 +239,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 0.0,
-            "y": 200.0
+            "x": 29.99997901916504,
+            "y": 150.0
         },
         "m_Blocks": [
             {
@@ -332,9 +326,9 @@
     "m_ShaderOutputName": "BaseColor",
     "m_StageCapability": 2,
     "m_Value": {
-        "x": 0.5,
-        "y": 0.5,
-        "z": 0.5
+        "x": 0.5377358198165894,
+        "y": 0.5377358198165894,
+        "z": 0.5377358198165894
     },
     "m_DefaultValue": {
         "x": 0.0,
@@ -348,41 +342,6 @@
         "g": 0.5,
         "b": 0.5,
         "a": 1.0
-    }
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.PropertyNode",
-    "m_ObjectId": "0b014beebea5480bb626877c4e744f87",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "Property",
-    "m_DrawState": {
-        "m_Expanded": true,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": -902.7500610351563,
-            "y": -706.10009765625,
-            "width": 0.0,
-            "height": 0.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "297b5712cef64f5daff1734c122c4217"
-        }
-    ],
-    "synonyms": [],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_PreviewMode": 0,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_Property": {
-        "m_Id": "89c14acd66534f7da8fed6d660546bac"
     }
 }
 
@@ -427,31 +386,6 @@
         "x": 0.0,
         "y": 0.0,
         "z": 0.0
-    },
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
-    "m_ObjectId": "297b5712cef64f5daff1734c122c4217",
-    "m_Id": 0,
-    "m_DisplayName": "Object Colour",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
     },
     "m_Labels": []
 }
@@ -529,9 +463,9 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
+        "r": 0.4528301954269409,
+        "g": 0.4528301954269409,
+        "b": 0.4528301954269409,
         "a": 0.0
     },
     "m_ColorMode": 0
@@ -558,8 +492,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -261.0000305175781,
-            "y": -338.0,
+            "x": -260.0000305175781,
+            "y": -353.0,
             "width": 208.0,
             "height": 302.0
         }
@@ -752,7 +686,7 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 0.0,
+    "m_Value": 0.33000001311302187,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
@@ -1127,7 +1061,7 @@
     "m_Guid": {
         "m_GuidSerialized": "2d92c8a3-0d60-4ebe-b053-c12161dc1027"
     },
-    "m_Name": "FS002_Day",
+    "m_Name": "Apollo Gradient",
     "m_DefaultReferenceName": "Texture2D_7b2e082f0d3d4c2b8a1c9ca474007c0c",
     "m_OverrideReferenceName": "",
     "m_GeneratePropertyBlock": true,
@@ -1238,30 +1172,6 @@
     "m_Property": {
         "m_Id": "c9d3137201a448e7845e549ffa7f568f"
     }
-}
-
-{
-    "m_SGVersion": 3,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.ColorShaderProperty",
-    "m_ObjectId": "89c14acd66534f7da8fed6d660546bac",
-    "m_Guid": {
-        "m_GuidSerialized": "b2683386-13f3-4d2e-af68-5f321a9b163b"
-    },
-    "m_Name": "Object Colour",
-    "m_DefaultReferenceName": "Color_89c14acd66534f7da8fed6d660546bac",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 0.0
-    },
-    "m_ColorMode": 0
 }
 
 {
@@ -1493,9 +1403,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -558.0,
-            "y": -808.9999389648438,
-            "width": 208.0,
+            "x": -598.0000610351563,
+            "y": -810.0000610351563,
+            "width": 208.00001525878907,
             "height": 437.0
         }
     },
@@ -1586,7 +1496,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DMaterialSlot",
     "m_ObjectId": "bb5bb1503cd94799b31d9ea61b27f409",
     "m_Id": 0,
-    "m_DisplayName": "FS002_Day",
+    "m_DisplayName": "Apollo Gradient",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
@@ -1642,7 +1552,7 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 0.0,
+    "m_Value": 0.10000000149011612,
     "m_FloatType": 0,
     "m_RangeValues": {
         "x": 0.0,
@@ -1941,10 +1851,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -985.9999389648438,
-            "y": -779.9999389648438,
-            "width": 143.0,
-            "height": 106.0
+            "x": -1007.0000610351563,
+            "y": -779.0,
+            "width": 166.0,
+            "height": 34.0
         }
     },
     "m_Slots": [
