@@ -2,9 +2,13 @@ Readme - Standard Shaders
 _________________________
 
 
+URP Setup: 
+
 Support Unity versions
 2019.3.0 or higher
 
+First delete the Builtin folder and unpack the URP-Wet shaders Puddles.unitypackage. In order to use the shaders with the Universal Render Pipeline
+you will need to enable the Opaque Texture toggle in the pipeline asset inspector(for more information check the documentation linked below).
 
 
 Documentation link : https://docs.google.com/document/d/1gPdDTmOarLQdftwpmlU1dNOdocqUjJegSJWxv5s5x68/edit

@@ -8,13 +8,13 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Fence
-  m_Shader: {fileID: 4800000, guid: 0e0019510d6142644b412d07db9dee4e, type: 3}
-  m_ShaderKeywords: _BLENDMODE_NONE _CHANNELSELECTED_RED _CHANNELSELECTIONMASK_RED
-    _DETAILSOURCE_METALLICALPHA _DETAILSOURCE_SPECULARALPHA _PROJECTION_UVPROJECTION
-    _SOURCE_METALLICALPHA _SOURCE_SPECULARALPHA _TRIPLANARSPACEPROJECTION_OBJECTSPACE
-    _USEAOFROMMAINPROPERTIES_ON _USEBASECOLORALPHA_ON _USEEMISSIONFROMMAINPROPERTIES_ON
-    _WORLDDIRECTION_ON
-  m_LightmapFlags: 0
+  m_Shader: {fileID: 4800000, guid: 1f53b2e079258874d987bc2948630b78, type: 3}
+  m_ShaderKeywords: _BLENDMODE_NONE _CHANNELSELECTED_ALPHA _CHANNELSELECTIONMASK_RED
+    _DETAILSOURCE_METALLICALPHA _DETAILSOURCE_SPECULARALPHA _ENABLEALPHACLIPPING_ON
+    _ENABLETRIPLANARPROJECTION_ON _PROJECTION_UVPROJECTION _SOURCE_METALLICALPHA
+    _SOURCE_SPECULARALPHA _TRIPLANARSPACEPROJECTION_OBJECTSPACE _USEAOFROMMAINPROPERTIES_ON
+    _USEEMISSIONFROMMAINPROPERTIES_ON _WORLDDIRECTION_ON
+  m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -27,6 +27,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _BaseMap:
+        m_Texture: {fileID: 2800000, guid: 2bbd225c2010243428e265aa5456c1c9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BumpMap:
         m_Texture: {fileID: 2800000, guid: c5d14b055690f8f49aad7ba715b7afaa, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -36,7 +40,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _CutoutMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 2bbd225c2010243428e265aa5456c1c9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CutoutMask:
+        m_Texture: {fileID: 2800000, guid: 2bbd225c2010243428e265aa5456c1c9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -88,6 +96,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _AlphaCutoff: 0.5
     - _AmbientLight1: 0
     - _AoIntensity: 1
     - _AoIntensity1: 1
@@ -98,11 +107,13 @@ Material:
     - _Brightness: 1
     - _Brightness1: 0
     - _BumpScale: 1
-    - _ChannelSelected: 0
+    - _ChannelSelected: 3
+    - _ChannelSelection1: 0
     - _ChannelSelectionMask: 0
+    - _ChannelSelectionMask1: 0
     - _ContrastDetailMap: 0
     - _Cull: 0
-    - _Cutoff: 0.5
+    - _Cutoff: 0.56
     - _Desaturation1: 0
     - _DesaturationCubemap: 0
     - _DetailBrightness: 1
@@ -116,21 +127,25 @@ Material:
     - _DstBlend: 0
     - _EmissionIntensity: 1
     - _EmissiveIntensity1: 1
+    - _EnableAlphaClipping: 1
     - _EnableDetailMask: 0
     - _EnableReflection: 0
+    - _EnableTriplanarProjection: 1
     - _FresnelStrength1: 0
     - _GeneralTiling: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.75
     - _GlossyReflections: 1
     - _IntensityCutoutMap: 0.5
+    - _IntensityCutoutMap1: 0.5
     - _IntensityMask: 1
     - _InvertABaseColor: 0
+    - _InvertABaseColor1: 0
     - _InvertAdditionalmap: 0
     - _InvertAlbedoAlpha: 0
     - _InvertCutout: 0
     - _InvertMask: 0
-    - _Metallic: 0.55
+    - _Metallic: 0.4
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0
@@ -138,8 +153,10 @@ Material:
     - _ReflectionIntensity1: 2
     - _Saturation: 0
     - _Saturation1: 0
+    - _Smoothness: 0.678
     - _SmoothnessTextureChannel: 0
     - _Source: 0
+    - _SourceMask: 0
     - _SpecularHighlights: 1
     - _SpecularIntensity: 0.2
     - _SpecularIntensity1: 0.2
@@ -149,7 +166,7 @@ Material:
     - _TriplanarSpaceProjection: 0
     - _UVSec: 0
     - _UseAoFromMainProperties: 1
-    - _UseBaseColorAlpha: 1
+    - _UseBaseColorAlpha: 0
     - _UseEmissionFromMainProperties: 1
     - _VisualizeMask: 0
     - _WorldDirection: 1
@@ -165,3 +182,4 @@ Material:
     - _GlobalXYTilingXYZWOffsetXY: {r: 1, g: 1, b: 0, a: 0}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
     - _TriplanarXYTilingXYZWOffsetXY: {r: 1, g: 1, b: 0, a: 0}
+    - _TriplanarXYTilingXYZWOffsetXY1: {r: 1, g: 1, b: 0, a: 0}

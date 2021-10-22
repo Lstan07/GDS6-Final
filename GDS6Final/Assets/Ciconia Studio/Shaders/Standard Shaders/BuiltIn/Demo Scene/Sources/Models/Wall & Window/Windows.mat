@@ -8,13 +8,13 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Windows
-  m_Shader: {fileID: 4800000, guid: bbb29bc6f1f0b704d989cac34a3a1b7e, type: 3}
+  m_Shader: {fileID: 4800000, guid: a6eaf86a8de24e944929f4b487ba8e84, type: 3}
   m_ShaderKeywords: _BLENDMODE_NONE _CHANNELSELECTED_RED _CHANNELSELECTIONMASK_RED
     _CHANNELSELECTION_RED _DETAILSOURCE_METALLICALPHA _DETAILSOURCE_SPECULARALPHA
-    _DISABLEALBEDOALPHACHANNEL_ON _ENABLEDETAILMASK_ON _ENABLEREFLECTION_ON _INVERTMASK_ON
-    _PROJECTION_UVPROJECTION _SOURCE_METALLICALPHA _SOURCE_SPECULARALPHA _TRIPLANARSPACEPROJECTION_OBJECTSPACE
+    _DISABLEALBEDOALPHACHANNEL_ON _ENABLEDETAILMASK_ON _ENABLEREFLECTION_ON _PROJECTION_UVPROJECTION
+    _SOURCE_METALLICALPHA _SOURCE_SPECULARALPHA _TRIPLANARSPACEPROJECTION_OBJECTSPACE
     _USEAOFROMMAINPROPERTIES_ON _USEEMISSIONFROMMAINPROPERTIES_ON _WORLDDIRECTION_ON
-  m_LightmapFlags: 0
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -24,6 +24,10 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Additionalmap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BaseMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -48,11 +52,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
-        m_Texture: {fileID: 2800000, guid: 975091fd01255324da00cdc05598ac59, type: 3}
-        m_Scale: {x: 4, y: 1}
+        m_Texture: {fileID: 2800000, guid: 61af0a267c7c3324fb66b76752e0d2fb, type: 3}
+        m_Scale: {x: 8, y: 8}
         m_Offset: {x: 0, y: 0}
     - _DetailMask:
-        m_Texture: {fileID: 2800000, guid: 86ebfa1ab0e548a49856929ed997d670, type: 3}
+        m_Texture: {fileID: 2800000, guid: 495bd0effe684774a89d47e5aa3dbc7a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailMetallicGlossMap:
@@ -60,8 +64,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailNormalMap:
-        m_Texture: {fileID: 2800000, guid: f90378c80af4a9b40a5f303d26222178, type: 3}
-        m_Scale: {x: 4, y: 0.1}
+        m_Texture: {fileID: 2800000, guid: a4818f55b22c0894981f4006a2c10a4c, type: 3}
+        m_Scale: {x: 8, y: 8}
         m_Offset: {x: 0, y: 0}
     - _DetailSpecGlossMap:
         m_Texture: {fileID: 0}
@@ -76,7 +80,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 0c6677bd6d9a35e488cf73862d72a04e, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -100,7 +104,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TransparentMask:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 495bd0effe684774a89d47e5aa3dbc7a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _samplecubemap:
@@ -113,6 +117,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AlphaAmount: 1.43
+    - _AlphaCutoff: 0.5
     - _AmbientLight1: 0
     - _AoIntensity: 1
     - _AoIntensity1: 0
@@ -125,17 +130,17 @@ Material:
     - _BumpScale: 1
     - _ChannelSelected: 0
     - _ChannelSelection: 0
+    - _ChannelSelection1: 0
     - _ChannelSelectionMask: 0
-    - _ContrastDetailMap: 0
-    - _ContrastTransparentMap: 0
-    - _Cull: 0
+    - _ContrastDetailMap: 8
+    - _ContrastTransparentMap: 8
     - _Cutoff: 0.5
     - _Desaturation1: 0
     - _DesaturationCubemap: 0
-    - _DetailBrightness: 1.17
+    - _DetailBrightness: 1
     - _DetailGlossiness: 1
     - _DetailMetallic: 0
-    - _DetailNormalMapScale: 0.01
+    - _DetailNormalMapScale: 0.6
     - _DetailSaturation: 0.03
     - _DetailSource: 0
     - _DetailSpecularIntensity: 0.2
@@ -151,29 +156,31 @@ Material:
     - _Glossiness: 1
     - _GlossyReflections: 1
     - _IntensityMask: 1
-    - _IntensityTransparentMap: 0.15
+    - _IntensityTransparentMap: 0
     - _InvertABaseColor: 0
     - _InvertAdditionalmap: 0
     - _InvertAlbedoAlpha: 0
     - _InvertCutout: 0
-    - _InvertMask: 1
+    - _InvertMask: 0
     - _InvertTransparent: 0
-    - _Metallic: 0
+    - _Metallic: 0.208
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _Parallax: 0.02
+    - _Parallax: 0
     - _Projection: 0
     - _ReflectionIntensity: 0
     - _ReflectionIntensity1: 7.15
     - _ReflectionProbeintensity: 0.48
     - _Saturation: 0
     - _Saturation1: 0
+    - _Smoothness: 1
     - _SmoothnessTextureChannel: 0
     - _Source: 0
+    - _SourceMask: 0
     - _SpecularHighlights: 1
     - _SpecularIntensity: 0.2
     - _SpreadDetailMap: 0
-    - _SpreadTransparentMap: 0
+    - _SpreadTransparentMap: -0.5
     - _SrcBlend: 1
     - _TriplanarFalloff: 20
     - _TriplanarSpaceProjection: 0
@@ -184,7 +191,6 @@ Material:
     - _VisualizeMask: 0
     - _WorldDirection: 1
     - _WorldReflection: 4.67
-    - _ZTest: 4
     - _ZWrite: 1
     - __dirty: 0
     m_Colors:
