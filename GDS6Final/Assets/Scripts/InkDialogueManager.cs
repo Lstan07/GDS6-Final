@@ -129,12 +129,12 @@ public class InkDialogueManager : MonoBehaviour
         }
 
 
-        /* if (currentStory.currentChoices.Count < choices.Length)
+         if (currentStory.currentChoices.Count < choices.Length)
          {
              Debug.Log("Don't Exit");
 
 
-         }*/
+         }
     }
 
     private void DisplayChoices()

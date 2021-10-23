@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lg_environment_material
-    second: {fileID: 2100000, guid: d2691477e39aa3f419056d6dad206580, type: 2}
+    second: {fileID: 2100000, guid: a2a0f336ed10a9e49b3ebc77c8c84082, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
