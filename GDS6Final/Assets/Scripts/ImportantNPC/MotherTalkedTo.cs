@@ -13,9 +13,13 @@ public class MotherTalkedTo : MonoBehaviour
 
     //GATEKEEPERS
     public GameObject FynnBlockerLeft;
+    public GameObject FynnBlockerLeftO;
     public GameObject FynnBlockerRight;
+    public GameObject FynnBlockerRightO;
     public GameObject AlmoiraBlockers;
+    public GameObject AlmoiraBlockersO;
     public GameObject LinnaeusBlockers;
+    public GameObject LinnaeusBlockersO;
     public GameObject SanarbiaBlockerLeft;
     public GameObject SanarbiaBlockerRight;
     public GameObject SanarbiaBlockerBack;
@@ -42,17 +46,21 @@ public class MotherTalkedTo : MonoBehaviour
         if (TalkedToBrig >= 1)
         {
             LinnaeusBlockers.SetActive(false);
+            LinnaeusBlockersO.SetActive(false);
         }
 
         if (TalkedToReagan >= 1)
         {
             FynnBlockerLeft.SetActive(false);
             FynnBlockerRight.SetActive(false);
+            FynnBlockerLeftO.SetActive(false);
+            FynnBlockerRightO.SetActive(false);
         }
 
         if (TalkedToTella >= 1)
         {
             AlmoiraBlockers.SetActive(false);
+            AlmoiraBlockersO.SetActive(false);
         }
 
         if (TalkedToSanarbia >= 1)
