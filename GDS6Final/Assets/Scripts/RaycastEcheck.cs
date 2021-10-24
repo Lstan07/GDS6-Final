@@ -5,6 +5,8 @@ using UnityEngine;
 public class RaycastEcheck : MonoBehaviour
 {
     public float sphereRadius;
+    public GameObject AsteroidPiece;
+    public GameObject InvisSphere;
     //public AudioSource songy;
     //public float fadetalk;
     // Start is called before the first frame update
@@ -86,6 +88,15 @@ public class RaycastEcheck : MonoBehaviour
                 {
                     MotherTalkedTo.TalkedToAlmoira++;
                     print(MotherTalkedTo.TalkedToAlmoira);
+                }
+            }
+
+            if (hit.transform.name == "SanarbiaLast")
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    InvisSphere.SetActive(true);
+                    AsteroidPiece.SetActive(true);
                 }
             }
         }
