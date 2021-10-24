@@ -20,7 +20,7 @@ public class MarketAmbience : MonoBehaviour
     {
         if (fadeOut)
         {
-            if(marketsound.volume > 0.01)
+            if(marketsound.volume >= 0.001)
             {
                 marketsound.volume -= fadeFactor * Time.deltaTime;
             }
@@ -30,7 +30,7 @@ public class MarketAmbience : MonoBehaviour
         
         if (fadeIn)
         {
-            if (marketsound.volume <= 0.05)
+            if (marketsound.volume <= 0.07)
             {
                 marketsound.volume += fadeFactor * Time.deltaTime;
             }

@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: lambert5
+    second: {fileID: 2100000, guid: a9523ca3dcc39df41a8b3792c6984b12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: phong4
     second: {fileID: 2100000, guid: 6c6f1f5de5644674490fee309e930093, type: 2}
   materials:
