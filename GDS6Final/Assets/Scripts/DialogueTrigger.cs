@@ -16,7 +16,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public string interactButton;
 
-    
+    //public bool CosmoShouldTurn; //SDFGHGGHGVDJSHVSVJSVHVSJCVSJDVDSVDD\SHCVSJVCSVCHJSVCHJSCVSHCVSJCVJCHVSJCV
 
     private void Awake()
     {
@@ -43,6 +43,8 @@ public class DialogueTrigger : MonoBehaviour
         {
             visualCue.SetActive(false);
         }
+
+        //CosmoShouldTurn = CosmoRotate.isTalking; //sjkdgaksjdgkjsgdjkasgdkjsgdjkgsakjgsdkjgsdkjgsakdjgksajgdaksgdajk
     }
 
     private void OnTriggerEnter (Collider collider)
@@ -52,6 +54,7 @@ public class DialogueTrigger : MonoBehaviour
 
             Debug.Log("what is going on bitch");
             playerInRange = true;
+            //CosmoRotate.isTalking = true; //akshakhskahskahskahskahksahskhakshsjdhjfgsjdsjdhjaskasakhsakhsakhs
         }
     }
 
@@ -59,7 +62,8 @@ public class DialogueTrigger : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
-            playerInRange = false; 
+            playerInRange = false;
+            //CosmoRotate.isTalking = false; // adhkahdkahdkhdkahdkhakhkahdkahdkahdkahkahdkahdkah
         }
     }
 }

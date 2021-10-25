@@ -30,6 +30,8 @@ public class InkDialogueManager : MonoBehaviour
     public AudioSource MarketMusic;
     public float songfade;
 
+    public bool CosmoShouldTurn; //SDFGHGGHGVDJSHVSVJSVHVSJCVSJDVDSVDD\SHCVSJVCSVCHJSVCHJSCVSHCVSJCVJCHVSJCV
+
     private void Awake()
     {
         if (instance != null)
@@ -81,11 +83,13 @@ public class InkDialogueManager : MonoBehaviour
             }
             
         }
+
+        CosmoShouldTurn = CosmoRotate.isTalking; //sjkdgaksjdgkjsgdjkasgdkjsgdjkgsakjgsdkjgsdkjgsakdjgksajgdaksgdajk
     }
 
     public void EnterDialogueMode(TextAsset inkJSON)
     {
-
+        CosmoRotate.isTalking = true; //akshakhskahskahskahskahksahskhakshsjdhjfgsjdsjdhjaskasakhsakhsakhs
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
@@ -99,6 +103,7 @@ public class InkDialogueManager : MonoBehaviour
 
     private void ExitDialogueMode()
     {
+        CosmoRotate.isTalking = false; // adhkahdkahdkhdkahdkhakhkahdkahdkahdkahkahdkahdkah
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
 
